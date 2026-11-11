@@ -1,0 +1,6 @@
+TeachLab repository safety
+==========================
+Do not commit passwords, API keys, tokens, private keys, student personal data,
+university confidential files, or real production database exports.
+Use .env.example for placeholder configuration and keep real .env files untracked.
+Only perform cybersecurity testing on systems you own or are explicitly authorized to assess.
