@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #28939C;
+            --primary-dark: #1a6f74;
+            --dark: #101820;
+            --soft: #f4f8f9;
+            --light: #ffffff;
+            --text: #21313c;
+            --shadow: 0 12px 25px rgba(16, 24, 32, 0.12);
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #edf7f8 0%, #f9fbfb 100%);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+            box-shadow: var(--shadow);
+            background: var(--light);
+        }
+
+        header {
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            letter-spacing: 0.08em;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 2.5vw, 2.8rem);
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: var(--soft);
+            border-bottom: 1px solid rgba(16, 24, 32, 0.08);
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 2rem;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            padding: 0.6rem 1rem;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+        }
+
+        ul li a:hover {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .row {
+            display: flex;
+            min-height: 75vh;
+        }
+
+        .row aside {
+            flex: 0 0 30%;
+            background: linear-gradient(180deg, #0a1720 0%, #101820 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row aside::before,
+        .row aside::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(40, 147, 156, 0.18);
+            border: 2px solid rgba(255, 255, 255, 0.14);
+        }
+
+        .row aside::before {
+            top: 5%;
+            left: 10%;
+        }
+
+        .row aside::after {
+            bottom: 8%;
+            right: 12%;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f2fbfc 0%, #edf3f6 100%);
+            padding: 2.5rem;
+        }
+
+        .content {
+            max-width: 620px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(2px);
+            padding: 2.2rem 2rem;
+            border-radius: 22px;
+            box-shadow: var(--shadow);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(40, 147, 156, 0.12);
+            color: var(--primary-dark);
+            padding: 0.45rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .content h2 {
+            font-size: clamp(2rem, 3vw, 3rem);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #3d4d57;
+        }
+
+        footer {
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .row aside {
+                min-height: 180px;
+                flex-basis: auto;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+
+            .content {
+                padding: 1.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Zain.com</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <aside aria-label="Sidebar"></aside>
+            <main>
+                <div class="content">
+                    <span class="tag">Learn. Build. Grow.</span>
+                    <h2>Creative web solutions for modern brands.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia perspiciatis a ex sed.
+                        Libero harum delectus in eos enim nihil eligendi, architecto, hic quaerat veritatis pariatur
+                        laudantium modi perferendis?
+                    </p>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2026 Zain.com</p>
+        </footer>
+    </div>
+</body>
+
+</html>
