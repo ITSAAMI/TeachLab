@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>ZainDarkLabs | Software House</title>
     <style>
+        /* Reset basic browser spacing so the layout starts from a clean slate */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Define reusable colors and shadows for a consistent brand look */
         :root {
             --primary: #28939C;
             --primary-dark: #1a6f74;
@@ -22,39 +24,49 @@
             --shadow: 0 12px 25px rgba(16, 24, 32, 0.12);
         }
 
+        /* Page background and typography */
         body {
             min-height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(180deg, #edf7f8 0%, #f9fbfb 100%);
             color: var(--text);
+            line-height: 1.6;
         }
 
+        /* Main wrapper keeps the whole site centered and refined */
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             min-height: 100vh;
             box-shadow: var(--shadow);
             background: var(--light);
         }
 
+        /* Top branding header */
         header {
-            height: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 94px;
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: var(--light);
             letter-spacing: 0.08em;
+            text-align: center;
+            padding: 1.2rem 1.5rem;
         }
 
         header h1 {
-            font-size: clamp(2rem, 2.5vw, 2.8rem);
+            font-size: clamp(1.8rem, 2.4vw, 3rem);
             text-transform: uppercase;
+            font-weight: 800;
+            margin: 0;
         }
 
+        /* Navigation bar styling */
         nav {
-            background: var(--soft);
+            background: rgba(244, 248, 249, 0.9);
             border-bottom: 1px solid rgba(16, 24, 32, 0.08);
+            backdrop-filter: blur(4px);
         }
 
         ul {
@@ -62,106 +74,247 @@
             justify-content: center;
             align-items: center;
             list-style: none;
-            gap: 2rem;
-            padding: 1rem 0;
+            gap: 1.2rem;
+            padding: 1rem 1.5rem;
             flex-wrap: wrap;
+            margin: 0;
         }
 
         ul li a {
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             color: var(--dark);
-            padding: 0.6rem 1rem;
+            padding: 0.7rem 1.15rem;
             border-radius: 999px;
             transition: all 0.3s ease;
+            display: inline-block;
         }
 
         ul li a:hover {
             background: var(--primary);
             color: var(--light);
+            transform: translateY(-1px);
         }
 
+        /* Two-column hero section */
         .row {
             display: flex;
-            min-height: 75vh;
+            min-height: 72vh;
         }
 
+        /* Sidebar visual treatment */
         .row aside {
-            flex: 0 0 30%;
-            background: linear-gradient(180deg, #0a1720 0%, #101820 100%);
+            flex: 0 0 32%;
+            background: linear-gradient(180deg, #0c1d26 0%, #101820 100%);
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 2rem;
         }
 
         .row aside::before,
         .row aside::after {
             content: "";
             position: absolute;
-            width: 220px;
-            height: 220px;
+            width: 230px;
+            height: 230px;
             border-radius: 50%;
-            background: rgba(40, 147, 156, 0.18);
+            background: rgba(40, 147, 156, 0.14);
             border: 2px solid rgba(255, 255, 255, 0.14);
         }
 
         .row aside::before {
-            top: 5%;
-            left: 10%;
+            top: 8%;
+            left: 12%;
         }
 
         .row aside::after {
-            bottom: 8%;
+            bottom: 10%;
             right: 12%;
         }
 
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #f2fbfc 0%, #edf3f6 100%);
-            padding: 2.5rem;
+        .sidebar-card {
+            position: relative;
+            z-index: 1;
+            width: min(280px, 100%);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 1.5rem;
+            color: var(--light);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
         }
 
-        .content {
-            max-width: 620px;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(2px);
-            padding: 2.2rem 2rem;
-            border-radius: 22px;
-            box-shadow: var(--shadow);
-        }
-
-        .tag {
+        .sidebar-card .mini-label {
             display: inline-block;
-            background: rgba(40, 147, 156, 0.12);
-            color: var(--primary-dark);
-            padding: 0.45rem 0.9rem;
+            padding: 0.45rem 0.8rem;
             border-radius: 999px;
-            font-size: 0.8rem;
+            background: rgba(40, 147, 156, 0.18);
+            color: #c7f4f5;
+            font-size: 0.72rem;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             margin-bottom: 1rem;
         }
 
+        .sidebar-card h3 {
+            font-size: 2rem;
+            line-height: 1.1;
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.2rem;
+        }
+
+        .sidebar-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .sidebar-points li {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            color: #dfeef0;
+            font-size: 0.95rem;
+        }
+
+        .sidebar-points li::before {
+            content: "✓";
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(40, 147, 156, 0.2);
+            color: #8de7ea;
+            font-weight: 700;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f2fbfc 0%, #edf3f6 100%);
+            padding: 3rem 2.5rem;
+        }
+
+        .content {
+            width: min(680px, 100%);
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(2px);
+            padding: 2.7rem 2.2rem;
+            border-radius: 26px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(16, 24, 32, 0.04);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(40, 147, 156, 0.12);
+            color: var(--primary-dark);
+            padding: 0.52rem 1rem;
+            border-radius: 999px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
         .content h2 {
-            font-size: clamp(2rem, 3vw, 3rem);
+            font-size: clamp(2.2rem, 3vw, 3.5rem);
             line-height: 1.1;
             margin-bottom: 1rem;
             color: var(--dark);
+            font-weight: 800;
         }
 
         .content p {
-            font-size: 1.05rem;
+            font-size: 1.06rem;
             line-height: 1.8;
             color: #3d4d57;
+            margin-bottom: 1.6rem;
         }
 
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 170px;
+            padding: 0.9rem 1.5rem;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            box-shadow: 0 12px 24px rgba(40, 147, 156, 0.22);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 28px rgba(40, 147, 156, 0.25);
+        }
+
+        .btn-secondary {
+            background: #edf6f7;
+            color: var(--dark);
+            border: 1px solid rgba(16, 24, 32, 0.08);
+        }
+
+        .btn-secondary:hover {
+            background: #e4f1f3;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .stat {
+            background: #f6fafb;
+            border: 1px solid rgba(16, 24, 32, 0.04);
+            border-radius: 18px;
+            padding: 1rem;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .stat span {
+            font-size: 0.85rem;
+            color: #576975;
+        }
+
+        /* Footer keeps branding and copyright information consistent */
         footer {
             min-height: 80px;
             display: flex;
@@ -175,13 +328,14 @@
             padding: 1rem;
         }
 
+        /* Responsive adjustments for smaller screens */
         @media (max-width: 768px) {
             .row {
                 flex-direction: column;
             }
 
             .row aside {
-                min-height: 180px;
+                min-height: 220px;
                 flex-basis: auto;
             }
 
@@ -190,42 +344,94 @@
             }
 
             .content {
-                padding: 1.5rem 1.2rem;
+                padding: 1.6rem 1.2rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
             }
         }
+
     </style>
 </head>
 
 <body>
+    <!-- Main page wrapper holds the full website layout -->
     <div class="container">
+        <!-- Top branding header -->
         <header>
-            <h1>Zain.com</h1>
+            <h1>ZainDarkLabs.com</h1>
         </header>
+
+        <!-- Primary navigation menu -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Process</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Main content row: left sidebar and right callout section -->
         <div class="row">
-            <aside aria-label="Sidebar"></aside>
+            <aside aria-label="Sidebar">
+                <div class="sidebar-card">
+                    <span class="mini-label">Digital Studio</span>
+                    <h3>Build smarter products.</h3>
+                    <p>Strategy, design, and development for brands that want premium digital experiences.</p>
+                    <ul class="sidebar-points">
+                        <li>UI/UX Design</li>
+                        <li>Web App Development</li>
+                        <li>Product Launch Support</li>
+                    </ul>
+                </div>
+            </aside>
             <main>
                 <div class="content">
-                    <span class="tag">Learn. Build. Grow.</span>
-                    <h2>Creative web solutions for modern brands.</h2>
+                    <span class="tag">Software House</span>
+                    <h2>We create digital systems that move businesses forward.</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia perspiciatis a ex sed.
-                        Libero harum delectus in eos enim nihil eligendi, architecto, hic quaerat veritatis pariatur
-                        laudantium modi perferendis?
+                        ZainDarkLabs designs and builds modern websites, product experiences, and custom software solutions
+                        that help startups and companies scale with clarity, speed, and confidence.
                     </p>
+
+                    <div class="button-group">
+                        <a href="#" class="btn btn-primary">Book a Call</a>
+                        <a href="#" class="btn btn-secondary">View Projects</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <strong>120+</strong>
+                            <span>Projects launched</span>
+                        </div>
+                        <div class="stat">
+                            <strong>8+</strong>
+                            <span>Years experience</span>
+                        </div>
+                        <div class="stat">
+                            <strong>98%</strong>
+                            <span>Client retention</span>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
+
+        <!-- Footer with company information -->
         <footer>
-            <p>Copyright &copy; 2026 Zain.com</p>
+            <p>Copyright &copy; 2026 ZainDarkLabs.com</p>
         </footer>
     </div>
 </body>
