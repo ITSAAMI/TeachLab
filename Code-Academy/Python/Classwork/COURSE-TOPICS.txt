@@ -1,0 +1,24 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: PYTHON — CLASSWORK
+Folder Path: TeachLab/Code-Academy/Python/Classwork
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive Python course covering core syntax, data structures, OOP, file handling, virtual environments, automation, web APIs, and data analysis.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01 Live Coding: Starter boilerplate & foundational syntax walkthrough
+  [ ] 02. Week 02 Live Coding: Responsive layout / modular structure implementation
+  [ ] 03. Week 03 Live Coding: Component patterns & interactive exercises
+  [ ] 04. Week 04 Live Coding: Utility styling, debugging & refactoring session
+  [ ] 05. Week 05 Live Coding: Dynamic data handling & asynchronous API demo
+  [ ] 06. Week 06 Live Coding: Capstone architecture & code review session
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

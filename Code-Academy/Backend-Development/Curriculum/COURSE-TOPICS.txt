@@ -1,0 +1,22 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: BACKEND DEVELOPMENT — CURRICULUM
+Folder Path: TeachLab/Code-Academy/Backend-Development/Curriculum
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Server-side engineering covering HTTP, RESTful API design, Node.js/Express, Python (Django/Flask), relational/NoSQL databases, authentication, and testing.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Course Syllabus & Weekly Learning Objectives (Weeks 01 - 06+)
+  [ ] 02. Prerequisites, Setup Guide & Required Developer Tooling
+  [ ] 03. Week-by-Week Lecture & Lab Mapping
+  [ ] 04. Assessment Breakdown (Quizzes, Assignments, Practical Labs, Capstone Rubric)
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

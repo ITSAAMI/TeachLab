@@ -1,0 +1,23 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: PROGRAMMING — LECTURES
+Folder Path: TeachLab/University/Programming/Lectures
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Academic semester courses with structured weekly lectures, lab manuals, graded assignments, and semester projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Lecture 01-02: Foundations, Terminology & Architecture Overview
+  [ ] 02. Lecture 03-04: Core Techniques, Design Patterns & Best Practices
+  [ ] 03. Lecture 05-06: Intermediate Workflows, Frameworks & Tooling
+  [ ] 04. Lecture 07-08: Advanced Topics, Optimization & Case Studies
+  [ ] 05. Lecture 09-10: Project Review, Testing & Production Readiness
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

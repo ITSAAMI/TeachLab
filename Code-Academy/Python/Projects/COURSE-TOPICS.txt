@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: PYTHON — PROJECTS
+Folder Path: TeachLab/Code-Academy/Python/Projects
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive Python course covering core syntax, data structures, OOP, file handling, virtual environments, automation, web APIs, and data analysis.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Project 01 (Starter): Beginner-friendly single-module project
+  [ ] 02. Project 02 (Intermediate): Multi-feature application with persistent data
+  [ ] 03. Project 03 (Capstone): Production-style portfolio project with README & live demo
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

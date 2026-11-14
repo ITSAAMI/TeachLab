@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: WEB DEVELOPMENT — PROJECTS
+Folder Path: TeachLab/Code-Academy/Web-Development/Projects
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Foundational to advanced web technologies covering HTML5, CSS3, Bootstrap 5, Tailwind CSS, JavaScript, DOM, APIs, and backend basics.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Project 01 (Starter): Beginner-friendly single-module project
+  [ ] 02. Project 02 (Intermediate): Multi-feature application with persistent data
+  [ ] 03. Project 03 (Capstone): Production-style portfolio project with README & live demo
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

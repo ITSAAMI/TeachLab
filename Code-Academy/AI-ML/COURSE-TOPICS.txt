@@ -1,0 +1,32 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — AI ML
+Folder Path: TeachLab/Code-Academy/AI-ML
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Practical machine learning and AI engineering from data preprocessing and scikit-learn models to deep neural networks and LLM applications.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Assignments/
+  * Classwork/
+  * Curriculum/
+  * Practical-Labs/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01: Python for Data Science (NumPy, Pandas, Matplotlib/Seaborn)
+  [ ] 02. Week 02: Exploratory Data Analysis (EDA) & Feature Engineering
+  [ ] 03. Week 03: Supervised Learning (Regression, Decision Trees, Random Forests, XGBoost)
+  [ ] 04. Week 04: Unsupervised Learning (K-Means, PCA) & Model Evaluation Metrics
+  [ ] 05. Week 05: Deep Learning Fundamentals with PyTorch / TensorFlow
+  [ ] 06. Week 06: LLM APIs, Embeddings, RAG & AI Model Deployment
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

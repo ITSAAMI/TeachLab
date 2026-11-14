@@ -1,0 +1,44 @@
+================================================================================
+WEEK 06 - ASSIGNMENT 06 (CAPSTONE): REACT.JS MODERN FRONTEND APPLICATION
+Level: 6 - Advanced+ (Course Capstone)
+Tech Stack: React.js (Vite) | JSX | Props | useState | useEffect | Tailwind CSS
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Build an interactive "TeachLab Academy & Course Store SPA" in React.js featuring
+reusable components, live filtering, custom hooks, a shopping cart, and dark mode.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Vite + React.js + Tailwind Setup
+  [ ] Initialize React project with Vite and configure Tailwind CSS
+  [ ] Organize src/ into components/, hooks/, and data/ folders
+
+[Step 2] Reusable Components & Props (Minimum 6 Components)
+  [ ] Navbar.jsx (live cart badge, favorites count, dark mode toggle)
+  [ ] HeroBanner.jsx, FilterBar.jsx, CourseCard.jsx, CartDrawer.jsx, Footer.jsx
+  [ ] Proper key={course.id} usage when rendering lists
+
+[Step 3] State Management & Derived Filtering (useState)
+  [ ] Controlled search input (filters by course title or instructor)
+  [ ] Category pills + Difficulty level filter + Sort dropdown
+  [ ] Empty-state UI with "Reset Filters" button when 0 results match
+
+[Step 4] Side Effects (useEffect) & Custom Hook (useLocalStorage)
+  [ ] Create useLocalStorage(key, initialValue) custom hook
+  [ ] Persist cartItems, favoriteIds, and darkMode across browser refreshes
+  [ ] Use useEffect for data fetching (with loading skeleton) & document.title sync
+
+[Step 5] Interactive Cart Drawer & Controlled Form
+  [ ] Add/Remove courses in CartDrawer + subtotal & promo code ("TEACHLAB10")
+  [ ] Controlled "Add Course" form modal with validation that appends to state
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- Component Architecture & Props Design:              25 pts
+- State Management & Derived Search/Filter/Sort:      25 pts
+- useEffect & Custom useLocalStorage Hook:            20 pts
+- Cart Calculations & Controlled Form Validation:     20 pts
+- Responsive Tailwind/Bootstrap Styling & Dark Mode:  10 pts
+================================================================================

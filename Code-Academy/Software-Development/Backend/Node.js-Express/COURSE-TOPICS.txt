@@ -1,0 +1,30 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: BACKEND — NODE.JS EXPRESS
+Folder Path: TeachLab/Code-Academy/Software-Development/Backend/Node.js-Express
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Bootcamp-style practical courses with weekly step-by-step assignments, live classwork, practical labs, and capstone projects.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Examples/
+  * Practice/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Frontend Development (HTML5, CSS3, Bootstrap 5, Tailwind CSS, JS ES6+, React.js)
+  [ ] 02. Backend Development (Node.js, Express, Python Django/Flask, PHP, REST APIs, Auth)
+  [ ] 03. Full-Stack Web Development (MERN / Next.js / Relational & NoSQL Databases)
+  [ ] 04. Programming Fundamentals & Python Track
+  [ ] 05. Mobile App Development (Flutter & React Native / Expo)
+  [ ] 06. AI/ML & Cybersecurity Bootcamp Tracks
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

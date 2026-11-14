@@ -1,0 +1,30 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CYBERSECURITY — THREAT MODELING
+Folder Path: TeachLab/Code-Academy/Cybersecurity/Threat-Modeling
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Defensive and offensive security training covering networking, Linux hardening, cryptography, web security (OWASP Top 10), forensics, and CTF labs.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Labs/
+  * Notes/
+  * Resources/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01: Networking Fundamentals (TCP/IP, OSI, DNS, HTTP/TLS, Wireshark)
+  [ ] 02. Week 02: Linux Security, Permissions, Bash Scripting & System Hardening
+  [ ] 03. Week 03: Applied Cryptography (Hashing, Symmetric/Asymmetric Encryption, PKI)
+  [ ] 04. Week 04: Web Application Security & OWASP Top 10 (SQLi, XSS, CSRF, SSRF)
+  [ ] 05. Week 05: Threat Modeling, Secure Coding Practices & Vulnerability Scanning
+  [ ] 06. Week 06: Digital Forensics, Incident Response & Capture-The-Flag (CTF) Labs
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

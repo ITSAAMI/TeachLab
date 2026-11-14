@@ -1,0 +1,23 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: MACHINE LEARNING — DATASETS DOCUMENTATION
+Folder Path: TeachLab/Code-Academy/Machine-Learning/Datasets-Documentation
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Mathematical foundations, classical ML algorithms, model evaluation, hyperparameter tuning, and reproducible notebook workflows.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01: Supervised Learning — Linear/Logistic Regression, SVM, Trees & Ensembles
+  [ ] 02. Module 02: Unsupervised Learning — Clustering (K-Means, DBSCAN) & Dimensionality Reduction
+  [ ] 03. Module 03: Feature Engineering, Scaling, Encoding & Imbalanced Datasets
+  [ ] 04. Module 04: Rigorous Evaluation — Cross-Validation, ROC-AUC, Precision/Recall & Calibration
+  [ ] 05. Module 05: Model Serialization, Pipelines & Production Inference
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

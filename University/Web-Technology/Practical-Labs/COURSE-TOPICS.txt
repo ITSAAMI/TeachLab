@@ -1,0 +1,23 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: WEB TECHNOLOGY — PRACTICAL LABS
+Folder Path: TeachLab/University/Web-Technology/Practical-Labs
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Academic semester courses with structured weekly lectures, lab manuals, graded assignments, and semester projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Lab 01: Environment Setup, CLI Basics & Hello-World Verification
+  [ ] 02. Lab 02: Core Building Blocks & Guided Practice Exercises
+  [ ] 03. Lab 03: Intermediate Components, Debugging & Edge Cases
+  [ ] 04. Lab 04: Data Integration, Storage & API Connectivity
+  [ ] 05. Lab 05: Performance, Accessibility / Security Audit & Deployment
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

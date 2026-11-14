@@ -1,0 +1,22 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: AGENTS — NOTES
+Folder Path: TeachLab/Artificial-Intelligence/Agents/Notes
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive AI curriculum covering search, classical ML, deep learning, NLP, computer vision, generative AI, LLMs, and autonomous agents.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. 01 - Quick Reference Cheat Sheet & Core Terminology
+  [ ] 02. 02 - Step-by-Step Concept Summaries & Diagrams
+  [ ] 03. 03 - Common Pitfalls, Debugging Tips & Best Practices
+  [ ] 04. 04 - Exam / Interview Preparation Key Questions
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

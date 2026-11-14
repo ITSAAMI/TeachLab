@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: TEACHING RESOURCES — REFERENCE MATERIALS
+Folder Path: TeachLab/Teaching-Resources/Reference-Materials
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Structured teaching, learning, and reference materials for Reference Materials inside TeachLab.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01 (Basic): Core foundations and terminology of Reference Materials
+  [ ] 02. Module 02 (Intermediate): Practical workflows, tools, and patterns in Reference Materials
+  [ ] 03. Module 03 (Advanced): Real-world implementation, optimization, and projects in Reference Materials
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

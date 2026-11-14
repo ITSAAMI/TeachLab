@@ -1,0 +1,23 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: UNIVERSITY — PROGRAMMING FUNDAMINTALS
+Folder Path: TeachLab/University/programming-fundamintals
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Academic semester courses with structured weekly lectures, lab manuals, graded assignments, and semester projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Web Technology (HTML5, CSS3, Bootstrap, Tailwind, JS, React & Backend Basics)
+  [ ] 02. Programming (Structured & Object-Oriented Programming)
+  [ ] 03. Database Systems (ER Modeling, SQL, Normalization & Transactions)
+  [ ] 04. Mobile App Development (Cross-Platform UI, State & APIs)
+  [ ] 05. Advanced Machine Learning & Advanced Neural Networks
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

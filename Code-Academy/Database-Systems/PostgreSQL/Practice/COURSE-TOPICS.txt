@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: POSTGRESQL — PRACTICE
+Folder Path: TeachLab/Code-Academy/Database-Systems/PostgreSQL/Practice
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Bootcamp-style practical courses with weekly step-by-step assignments, live classwork, practical labs, and capstone projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Practice Set 01 (Warm-up): 10 short drills on syntax and core concepts
+  [ ] 02. Practice Set 02 (Intermediate): 5 scenario-based implementation tasks
+  [ ] 03. Practice Set 03 (Challenge): 3 timed problem-solving & debugging challenges
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

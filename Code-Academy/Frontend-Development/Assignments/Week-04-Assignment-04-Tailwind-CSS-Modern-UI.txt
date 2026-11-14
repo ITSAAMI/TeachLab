@@ -1,0 +1,46 @@
+================================================================================
+WEEK 04 - ASSIGNMENT 04: TAILWIND CSS UTILITY-FIRST DESIGN & DARK MODE
+Level: 4 - Intermediate to Advanced
+Tech Stack: HTML5 + Tailwind CSS (Responsive Utilities, Bento Grid, Dark Mode)
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Build a modern "PulseAI SaaS Startup Landing Page" using 100% Tailwind CSS
+utility classes, featuring an asymmetric Bento Grid and full Light/Dark mode.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Tailwind Setup & Theme Configuration
+  [ ] Configure Tailwind with darkMode: 'class' and custom brand colors
+
+[Step 2] Sticky Glass Header & Theme Switcher
+  [ ] Sticky blurred navbar (sticky top-0 z-50 backdrop-blur-md)
+  [ ] Working Light/Dark mode button toggling 'dark' class on <html>
+
+[Step 3] Hero Section & UI Mockup
+  [ ] Responsive hero headline (text-4xl sm:text-5xl lg:text-6xl font-extrabold)
+  [ ] Gradient text highlight (bg-gradient-to-r ... bg-clip-text text-transparent)
+  [ ] Dashboard preview card built with Tailwind borders, shadows, and badges
+
+[Step 4] Asymmetric Bento Grid Features
+  [ ] 4-column desktop grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6)
+  [ ] Featured card spanning 2 columns & 2 rows (lg:col-span-2 lg:row-span-2)
+  [ ] Overlapping avatar stack (-space-x-3) and group-hover micro-interactions
+
+[Step 5] 3-Tier Pricing & Testimonials
+  [ ] 3 Pricing cards with middle "Pro" card elevated (ring-2 ring-teal-500)
+  [ ] 3 Testimonial cards with dark:bg-slate-800/60 support
+
+[Step 6] Newsletter CTA & Full Dark-Mode Audit
+  [ ] Gradient newsletter card with responsive input + button row
+  [ ] Zero unreadable text in either Light or Dark mode at 375px / 768px / 1280px
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- Tailwind Utility Fluency:                      25 pts
+- Asymmetric Bento Grid & group-hover States:    25 pts
+- Complete Light & Dark Mode Implementation:     20 pts
+- Responsive Prefixes (sm:, md:, lg:):           20 pts
+- Accessibility (focus-visible rings) & Cleanup: 10 pts
+================================================================================

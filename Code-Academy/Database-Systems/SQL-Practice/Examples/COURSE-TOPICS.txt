@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: SQL PRACTICE — EXAMPLES
+Folder Path: TeachLab/Code-Academy/Database-Systems/SQL-Practice/Examples
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Bootcamp-style practical courses with weekly step-by-step assignments, live classwork, practical labs, and capstone projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Example 01 (Basic): Minimal working starter example with inline comments
+  [ ] 02. Example 02 (Intermediate): Composed pattern demonstrating best practices
+  [ ] 03. Example 03 (Advanced): Real-world integration with error handling
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

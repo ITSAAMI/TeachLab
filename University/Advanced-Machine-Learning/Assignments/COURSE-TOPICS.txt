@@ -1,0 +1,24 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: ADVANCED MACHINE LEARNING — ASSIGNMENTS
+Folder Path: TeachLab/University/Advanced-Machine-Learning/Assignments
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Academic semester courses with structured weekly lectures, lab manuals, graded assignments, and semester projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Assignment 01 (Week 01 - Basic): Core concepts, syntax & foundational exercises
+  [ ] 02. Assignment 02 (Week 02 - Basic to Intermediate): Structured layouts / modular problem solving
+  [ ] 03. Assignment 03 (Week 03 - Intermediate): Framework / library components & data modeling
+  [ ] 04. Assignment 04 (Week 04 - Intermediate to Advanced): Real-world workflows, styling & validation
+  [ ] 05. Assignment 05 (Week 05 - Advanced): State persistence, API integration & error handling
+  [ ] 06. Assignment 06 (Week 06 - Capstone): End-to-end mini-application with documentation
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

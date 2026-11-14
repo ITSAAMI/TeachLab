@@ -1,0 +1,31 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — DATABASE SYSTEMS
+Folder Path: TeachLab/Code-Academy/Database-Systems
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Database architecture, ER modeling, normalization, SQL mastery (PostgreSQL & MySQL), indexing, transactions, and NoSQL document stores (MongoDB).
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Database-Design/
+  * MongoDB/
+  * MySQL/
+  * PostgreSQL/
+  * SQL-Practice/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01: Relational Model, ER Diagrams & Schema Normalization (1NF-3NF/BCNF)
+  [ ] 02. Module 02: Core SQL (DDL, DML, Joins, Aggregations, Subqueries, CTEs & Window Functions)
+  [ ] 03. Module 03: PostgreSQL & MySQL Administration, Indexing & Query Optimization
+  [ ] 04. Module 04: Transactions, ACID Properties, Concurrency Control & Backups
+  [ ] 05. Module 05: NoSQL Databases — MongoDB Document Modeling, Aggregation Pipeline & Indexing
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

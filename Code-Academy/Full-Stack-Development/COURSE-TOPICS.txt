@@ -1,0 +1,32 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — FULL STACK DEVELOPMENT
+Folder Path: TeachLab/Code-Academy/Full-Stack-Development
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+End-to-end web application engineering combining React/Next.js frontends with Node.js/Python backends and production databases.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Assignments/
+  * Classwork/
+  * Curriculum/
+  * Practical-Labs/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01: Modern Frontend Foundations (HTML5, CSS Grid/Tailwind, JavaScript ES6+)
+  [ ] 02. Week 02: React.js Component Architecture, Hooks & Client-Side Routing
+  [ ] 03. Week 03: Node.js & Express REST API Architecture
+  [ ] 04. Week 04: Database Modeling with PostgreSQL / MongoDB & ORM/ODM
+  [ ] 05. Week 05: Full-Stack Authentication (JWT/Cookies), Protected Routes & State Sync
+  [ ] 06. Week 06: Full-Stack Capstone Project, CI/CD Pipeline & Cloud Hosting
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

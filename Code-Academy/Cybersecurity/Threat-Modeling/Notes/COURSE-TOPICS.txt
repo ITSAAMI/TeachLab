@@ -1,0 +1,22 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: THREAT MODELING — NOTES
+Folder Path: TeachLab/Code-Academy/Cybersecurity/Threat-Modeling/Notes
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Bootcamp-style practical courses with weekly step-by-step assignments, live classwork, practical labs, and capstone projects.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. 01 - Quick Reference Cheat Sheet & Core Terminology
+  [ ] 02. 02 - Step-by-Step Concept Summaries & Diagrams
+  [ ] 03. 03 - Common Pitfalls, Debugging Tips & Best Practices
+  [ ] 04. 04 - Exam / Interview Preparation Key Questions
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

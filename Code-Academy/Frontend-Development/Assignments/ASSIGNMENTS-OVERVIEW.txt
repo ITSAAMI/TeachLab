@@ -1,0 +1,41 @@
+================================================================================
+FRONTEND DEVELOPMENT COURSE - 6 STEP-WISE WEEKLY ASSIGNMENTS
+TeachLab / Code-Academy
+Technologies: HTML5 | CSS3 | Bootstrap 5 | Tailwind CSS | JavaScript | React.js
+================================================================================
+
+PROGRESSION ROADMAP (BASIC -> INTERMEDIATE -> ADVANCED -> CAPSTONE)
+--------------------------------------------------------------------------------
+[Week 01] Assignment 01 (Level: BASIC)
+  Topic: HTML5 Semantic Structure, Tables, Forms & Core CSS3 Styling
+  Project: Personal Developer Profile, Weekly Class Schedule & Admission Form
+
+[Week 02] Assignment 02 (Level: BASIC -> INTERMEDIATE)
+  Topic: Modern CSS Layouts — Flexbox, CSS Grid, Custom Properties & Media Queries
+  Project: Multi-Section Responsive Software House Website (ZainDarkLabs Pro)
+
+[Week 03] Assignment 03 (Level: INTERMEDIATE)
+  Topic: Bootstrap 5 Framework — Grid System, Navbar, Cards, Modals & Validation
+  Project: Responsive E-Commerce Product Showcase & Course Admin Dashboard
+
+[Week 04] Assignment 04 (Level: INTERMEDIATE -> ADVANCED)
+  Topic: Tailwind CSS Utility-First Styling, Responsive Design & Dark Mode
+  Project: Modern AI SaaS Startup Landing Page with Bento Grid & Dark Theme
+
+[Week 05] Assignment 05 (Level: ADVANCED)
+  Topic: JavaScript ES6+, DOM Manipulation, Events, LocalStorage & Fetch API
+  Project: Smart Task & Expense Tracker + Live GitHub Profile Finder App
+
+[Week 06] Assignment 06 (Level: ADVANCED+ CAPSTONE)
+  Topic: React.js — Components, Props, State (useState), Effects (useEffect) & UI
+  Project: Interactive Course Catalog & Shopping Cart SPA in React.js + Tailwind
+
+================================================================================
+SUBMISSION CHECKLIST (EVERY WEEK)
+--------------------------------------------------------------------------------
+[ ] Semantic HTML5 tags used (<header>, <nav>, <main>, <section>, <footer>)
+[ ] No broken links or missing image alt attributes
+[ ] Responsive across Mobile (375px), Tablet (768px), and Desktop (1280px+)
+[ ] Clean indentation, readable class names, and commented sections
+[ ] Uploaded to GitHub repository / submitted in RollNo_Name_Assignment_0X folder
+================================================================================

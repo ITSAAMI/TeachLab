@@ -1,0 +1,27 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: ASSETS
+Folder Path: TeachLab/Assets
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Structured teaching, learning, and reference materials for Assets inside TeachLab.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Datasets-Samples/
+  * Diagrams/
+  * Images/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01 (Basic): Core foundations and terminology of Assets
+  [ ] 02. Module 02 (Intermediate): Practical workflows, tools, and patterns in Assets
+  [ ] 03. Module 03 (Advanced): Real-world implementation, optimization, and projects in Assets
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

@@ -1,0 +1,32 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — FRONTEND DEVELOPMENT
+Folder Path: TeachLab/Code-Academy/Frontend-Development
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Step-by-step 6-week frontend engineering course progressing from semantic HTML5 & CSS3 to Bootstrap 5, Tailwind CSS, JavaScript ES6+, and React.js SPAs.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Assignments/
+  * Classwork/
+  * Curriculum/
+  * Practical-Labs/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01 (Basic): HTML5 Semantics, Tables, Accessible Forms & Core CSS Box Model
+  [ ] 02. Week 02 (Basic -> Int): Modern CSS Variables, Flexbox, CSS Grid & Responsive Media Queries
+  [ ] 03. Week 03 (Intermediate): Bootstrap 5 Grid, Navbar, Offcanvas, Modals, Cards & Validation
+  [ ] 04. Week 04 (Int -> Adv): Tailwind CSS Utility-First Design, Bento Grids & Dark Mode
+  [ ] 05. Week 05 (Advanced): JavaScript ES6+, DOM Manipulation, LocalStorage & Async Fetch API
+  [ ] 06. Week 06 (Advanced+ Capstone): React.js Components, Props, Hooks (useState/useEffect) & SPA
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

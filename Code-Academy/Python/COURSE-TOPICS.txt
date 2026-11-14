@@ -1,0 +1,32 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — PYTHON
+Folder Path: TeachLab/Code-Academy/Python
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive Python course covering core syntax, data structures, OOP, file handling, virtual environments, automation, web APIs, and data analysis.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Assignments/
+  * Classwork/
+  * Curriculum/
+  * Practical-Labs/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01 (Basic): Python Syntax, Variables, Conditionals, Loops & Functions
+  [ ] 02. Week 02 (Basic -> Int): Lists, Tuples, Sets, Dictionaries & List Comprehensions
+  [ ] 03. Week 03 (Intermediate): File I/O (CSV/JSON), Exception Handling & Modules/Packages
+  [ ] 04. Week 04 (Int -> Adv): Object-Oriented Programming (Classes, Dunder Methods, Inheritance)
+  [ ] 05. Week 05 (Advanced): Iterators, Generators, Decorators, Virtual Environments & Pytest
+  [ ] 06. Week 06 (Capstone): Automation Scripts, REST API Client & Mini Web/Data Project
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

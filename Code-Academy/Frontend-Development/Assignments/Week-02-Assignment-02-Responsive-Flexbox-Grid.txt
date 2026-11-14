@@ -1,0 +1,49 @@
+================================================================================
+WEEK 02 - ASSIGNMENT 02: MODERN RESPONSIVE LAYOUTS (FLEXBOX & CSS GRID)
+Level: 2 - Basic to Intermediate
+Tech Stack: HTML5 + Modern CSS3 (Variables, Flexbox, Grid, Media Queries)
+Reference: ../Classwork/layout.html
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Expand the ZainDarkLabs classwork layout into a complete 5-section responsive
+Software House website that works seamlessly on Desktop, Tablet, and Mobile.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Design Tokens & Layout Wrapper
+  [ ] Define :root CSS variables (colors, radii, shadows, header height)
+  [ ] Create centered .wrapper (min(1200px, 100% - 3rem))
+
+[Step 2] Sticky Frosted-Glass Header (Flexbox)
+  [ ] position: sticky; top: 0; backdrop-filter: blur(14px)
+  [ ] Flexbox row with Logo, Navigation links (aria-current="page"), and CTA button
+
+[Step 3] Two-Column Hero Section (CSS Grid)
+  [ ] Desktop 2-column grid (1.15fr 0.85fr), stacks to 1 column on tablet/mobile
+  [ ] Fluid h1 heading with clamp(), CTA button group, and 3-column stats bar
+  [ ] Dark showcase card on the right with studio feature checklist
+
+[Step 4] Services Section (#services - 6 Cards)
+  [ ] Responsive CSS Grid: repeat(auto-fit, minmax(280px, 1fr))
+  [ ] 6 Service cards with icon badge, title, description, and bottom-aligned link
+  [ ] Hover lift transition (transform: translateY(-4px))
+
+[Step 5] Portfolio (#work) & 3-Tier Pricing Section (#pricing)
+  [ ] 3 Featured Project cards with 16:9 preview box and tech stack pills
+  [ ] 3 Pricing cards (Starter, Growth [Highlighted], Enterprise)
+
+[Step 6] Responsive Footer & Media Queries
+  [ ] 4-column dark footer collapsing to 2 columns on tablet and 1 column on mobile
+  [ ] Breakpoints at 960px, 760px, and 480px with zero horizontal overflow
+  [ ] Include prefers-reduced-motion and :focus-visible styles
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- CSS Variables & Fluid Typography:          15 pts
+- Sticky Flexbox Header & Grid Hero:         25 pts
+- Services, Portfolio & Pricing Grids:       25 pts
+- Responsive Breakpoints (1280/768/375px):   25 pts
+- Accessibility & Clean CSS Architecture:    10 pts
+================================================================================

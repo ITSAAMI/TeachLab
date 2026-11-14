@@ -1,0 +1,23 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: DATA SCIENCE — STATISTICS
+Folder Path: TeachLab/Code-Academy/Data-Science/Statistics
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Statistical analysis, data wrangling with Python (Pandas/NumPy), exploratory notebooks, and storytelling visualizations.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01: Python for Data Analysis (NumPy Arrays & Vectorized Operations)
+  [ ] 02. Module 02: Data Wrangling & Cleaning with Pandas DataFrames
+  [ ] 03. Module 03: Descriptive & Inferential Statistics, Probability & Hypothesis Testing
+  [ ] 04. Module 04: Data Visualization (Matplotlib, Seaborn, Plotly & Interactive Dashboards)
+  [ ] 05. Module 05: End-to-End Exploratory Data Analysis (EDA) Case Studies
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

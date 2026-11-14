@@ -1,0 +1,39 @@
+================================================================================
+WEEK 05 - ASSIGNMENT 05: INTERACTIVE JAVASCRIPT (ES6+, DOM, STORAGE & FETCH API)
+Level: 5 - Advanced
+Tech Stack: JavaScript ES6+ | DOM Events | LocalStorage | Async/Await Fetch API
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Build a "2-in-1 Smart Task/Expense Tracker & Live GitHub Developer Finder" web
+application demonstrating DOM manipulation, state persistence, and REST APIs.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Project Setup & ES6 Modules
+  [ ] Create index.html and modular JS files (<script type="module">)
+
+[Step 2] Part A: Smart Task & Expense Tracker (CRUD + Array Methods)
+  [ ] Form with inline validation (Title, Amount, Income/Expense, Category, Date)
+  [ ] Dynamic DOM rendering from state array using .map()
+  [ ] Live KPI cards calculated with .filter() and .reduce() (Income, Expense, Balance)
+  [ ] Event delegation on parent container for Complete, Edit, and Delete actions
+  [ ] Live search input, Category filter, and Sort (Newest / Highest Amount)
+  [ ] Full LocalStorage save & restore on page reload
+
+[Step 3] Part B: Live GitHub Developer Finder (Async/Await + Fetch API)
+  [ ] Search form querying https://api.github.com/users/{username}
+  [ ] Secondary fetch for top 6 recently updated repositories
+  [ ] Loading state indicator while request is in flight
+  [ ] Graceful error UI when user is not found (HTTP 404) or network fails
+  [ ] Render profile card (avatar, bio, followers) + 6 repo cards (stars, language)
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- ES6+ Syntax & Array Methods (map/filter/reduce): 20 pts
+- Dynamic DOM CRUD & Event Delegation:             25 pts
+- Live Search, Filter, Sort & LocalStorage:        20 pts
+- Async/Await Fetch API + Loading/Error States:    25 pts
+- Inline Form Validation & Code Structure:         10 pts
+================================================================================

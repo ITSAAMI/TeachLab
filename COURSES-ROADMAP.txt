@@ -1,0 +1,15 @@
+================================================================================
+TEACHLAB - MASTER COURSE & CURRICULUM ROADMAP
+================================================================================
+Every folder in TeachLab includes both a Markdown guide (README.md) and a
+plain-text syllabus checklist (COURSE-TOPICS.txt) to guide future courses.
+
+FEATURED: FRONTEND DEVELOPMENT 6-WEEK STEP-BY-STEP ASSIGNMENTS
+Location: Code-Academy/Frontend-Development/Assignments/
+  - Week 01 (Basic):        HTML5 Semantics, Tables, Forms & Core CSS3
+  - Week 02 (Basic -> Int): Responsive CSS Flexbox, Grid & Media Queries
+  - Week 03 (Intermediate): Bootstrap 5 Grid, Navbar, Modals, Cards & Forms
+  - Week 04 (Int -> Adv):   Tailwind CSS Utility-First UI, Bento Grid & Dark Mode
+  - Week 05 (Advanced):     JavaScript ES6+, DOM, LocalStorage & Fetch API
+  - Week 06 (Capstone):     React.js Components, Props, Hooks (useState/useEffect)
+================================================================================

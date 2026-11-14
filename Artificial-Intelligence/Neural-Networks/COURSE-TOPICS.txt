@@ -1,0 +1,30 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: ARTIFICIAL INTELLIGENCE — NEURAL NETWORKS
+Folder Path: TeachLab/Artificial-Intelligence/Neural-Networks
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive AI curriculum covering search, classical ML, deep learning, NLP, computer vision, generative AI, LLMs, and autonomous agents.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Experiments/
+  * Notes/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Week 01-02: AI Foundations, Search Algorithms & Knowledge Representation
+  [ ] 02. Week 03-04: Classical Machine Learning & Data Analysis Pipelines
+  [ ] 03. Week 05-06: Neural Networks & Deep Learning Architectures (CNNs, RNNs, Transformers)
+  [ ] 04. Week 07-08: Natural Language Processing (NLP) & Computer Vision
+  [ ] 05. Week 09-10: Large Language Models (LLMs), Prompt Engineering & RAG
+  [ ] 06. Week 11-12: Generative AI & Multi-Agent Autonomous Systems
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

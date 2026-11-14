@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: ASSETS — DATASETS SAMPLES
+Folder Path: TeachLab/Assets/Datasets-Samples
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Structured teaching, learning, and reference materials for Datasets Samples inside TeachLab.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01 (Basic): Core foundations and terminology of Datasets Samples
+  [ ] 02. Module 02 (Intermediate): Practical workflows, tools, and patterns in Datasets Samples
+  [ ] 03. Module 03 (Advanced): Real-world implementation, optimization, and projects in Datasets Samples
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

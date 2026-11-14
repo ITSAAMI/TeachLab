@@ -1,0 +1,55 @@
+================================================================================
+FRONTEND DEVELOPMENT BOOTCAMP - 6-WEEK COURSE SYLLABUS
+TeachLab / Code-Academy
+Stack: HTML5 | CSS3 | Bootstrap 5 | Tailwind CSS | JavaScript ES6+ | React.js
+================================================================================
+
+WEEK 01: HTML5 SEMANTICS & CORE CSS3 FOUNDATIONS (LEVEL: BASIC)
+--------------------------------------------------------------------------------
+- 1.1 HTML5 Document Structure, Head Metadata, SEO & Accessibility Basics
+- 1.2 Semantic Landmarks (<header>, <nav>, <main>, <section>, <article>, <footer>)
+- 1.3 Data Tables (<thead>, <tbody>, <tfoot>) & Accessible Validated Forms
+- 1.4 CSS3 Selectors, Specificity, Typography, Colors & The Box Model
+- Assignment 01: Personal Developer Profile, Schedule Table & Admission Form
+
+WEEK 02: MODERN RESPONSIVE LAYOUTS - FLEXBOX & CSS GRID (LEVEL: BASIC -> INT)
+--------------------------------------------------------------------------------
+- 2.1 CSS Custom Properties (:root Design Tokens) & Logical Properties
+- 2.2 Flexbox 1D Layouts (Navbars, Button Groups, Equal-Height Cards)
+- 2.3 CSS Grid 2D Layouts (fr, minmax, auto-fit, Hero & Card Grids)
+- 2.4 Sticky Glass Headers, Fluid Typography (clamp) & Media Queries (@media)
+- Classwork: ../Classwork/layout.html
+- Assignment 02: 5-Section Responsive Software House Website (ZainDarkLabs Pro)
+
+WEEK 03: BOOTSTRAP 5 RAPID UI ENGINEERING (LEVEL: INTERMEDIATE)
+--------------------------------------------------------------------------------
+- 3.1 Bootstrap 5 Setup, Containers & 12-Column Responsive Grid System
+- 3.2 Responsive Navbar, Offcanvas Drawer, Nav Pills & Breadcrumbs
+- 3.3 Cards, Badges, Modals, Accordions, Alerts, Progress Bars & Tables
+- 3.4 Floating-Label Forms (.form-floating), Input Groups & Validation States
+- Assignment 03: 2-Page E-Commerce Storefront & Admin Dashboard in Bootstrap 5
+
+WEEK 04: TAILWIND CSS UTILITY-FIRST DESIGN & DARK MODE (LEVEL: INT -> ADV)
+--------------------------------------------------------------------------------
+- 4.1 Utility-First CSS Workflow, Theme Tokens & Responsive Prefixes (sm/md/lg)
+- 4.2 Interactive States (hover:, focus-visible:, group-hover:) & Transitions
+- 4.3 Gradients, Glassmorphism (backdrop-blur) & Asymmetric Bento Grids
+- 4.4 Dark Mode Architecture (darkMode: 'class', dark:* utilities & JS Toggle)
+- Assignment 04: PulseAI SaaS Startup Landing Page with Bento Grid & Dark Mode
+
+WEEK 05: INTERACTIVE JAVASCRIPT - ES6+, DOM, STORAGE & APIS (LEVEL: ADVANCED)
+--------------------------------------------------------------------------------
+- 5.1 Modern ES6+ Syntax (let/const, Arrow Functions, Destructuring, Modules)
+- 5.2 Functional Array Methods (.map, .filter, .reduce, .find, .sort)
+- 5.3 DOM Manipulation, Dynamic Rendering, Form Validation & Event Delegation
+- 5.4 LocalStorage Persistence & Async/Await fetch() REST API Integration
+- Assignment 05: Smart Task/Expense Tracker + Live GitHub Profile Finder App
+
+WEEK 06: REACT.JS MODERN FRONTEND CAPSTONE (LEVEL: ADVANCED+ CAPSTONE)
+--------------------------------------------------------------------------------
+- 6.1 Vite + React.js Architecture, JSX, Component Decomposition & Props
+- 6.2 Rendering Lists with Keys, Conditional UI & Tailwind/Bootstrap in React
+- 6.3 State Management (useState), Immutability, Derived Search/Filter/Sort
+- 6.4 Side Effects (useEffect), Custom Hooks (useLocalStorage) & Controlled Forms
+- Assignment 06: Interactive TeachLab Academy & Store SPA in React.js
+================================================================================

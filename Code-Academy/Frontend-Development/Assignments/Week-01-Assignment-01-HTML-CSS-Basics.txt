@@ -1,0 +1,51 @@
+================================================================================
+WEEK 01 - ASSIGNMENT 01: HTML5 & CORE CSS3 FOUNDATIONS
+Level: 1 - Basic (Beginner)
+Tech Stack: HTML5 + External CSS3 (Box Model, Typography, Tables, Forms)
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Build a "Personal Developer Profile & Student Admission Portal" (index.html +
+style.css) using semantic HTML5 elements and foundational CSS3 styling.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Document Setup & Semantic Landmarks
+  [ ] Create index.html and style.css
+  [ ] Include HTML5 doctype, meta viewport, title, and link to style.css
+  [ ] Use <header>, <nav>, <main>, <section>, and <footer>
+
+[Step 2] About Me & Skills Sections (#about, #skills)
+  [ ] Profile image <img> with meaningful alt text and rounded border
+  [ ] Bio paragraph (<p>) and coding quote (<blockquote>)
+  [ ] Unordered list (<ul>) of 6 frontend technologies
+  [ ] Ordered list (<ol>) of top 3 course goals
+
+[Step 3] Weekly Schedule Table (#schedule)
+  [ ] Semantic <table> with <caption>, <thead>, <tbody>, and <tfoot>
+  [ ] 6 rows for Weeks 01-06 (Week, Topic, Lab Activity, Timing, Level)
+  [ ] Summary row in <tfoot> using colspan
+  [ ] CSS: border-collapse: collapse, padded cells, nth-child(even) striping
+
+[Step 4] Accessible Registration Form (#register)
+  [ ] Group fields with <fieldset> and <legend>
+  [ ] Every input linked to a <label for="...">
+  [ ] Inputs: text, email, tel, date, select dropdown, radio group, checkboxes, textarea
+  [ ] Required validation attributes (required, minlength)
+  [ ] Submit and Reset buttons with hover states
+
+[Step 5] Core CSS Box Model & Card Styling (style.css)
+  [ ] Universal reset (* { margin: 0; padding: 0; box-sizing: border-box; })
+  [ ] Centered .container (max-width: 960px; margin: 0 auto;)
+  [ ] White card styling on each <section> (padding, margin-bottom, border-radius, shadow)
+  [ ] Focus styles (:focus-visible) on links and inputs
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- Semantic HTML5 & Boilerplate: 20 pts
+- Schedule Table & Styling:     20 pts
+- Accessible Registration Form: 25 pts
+- CSS Box Model & Typography:   25 pts
+- Clean Code & Comments:        10 pts
+================================================================================

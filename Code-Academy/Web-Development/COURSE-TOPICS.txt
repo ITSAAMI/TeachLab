@@ -1,0 +1,32 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: CODE ACADEMY — WEB DEVELOPMENT
+Folder Path: TeachLab/Code-Academy/Web-Development
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Foundational to advanced web technologies covering HTML5, CSS3, Bootstrap 5, Tailwind CSS, JavaScript, DOM, APIs, and backend basics.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Assignments/
+  * Classwork/
+  * Curriculum/
+  * Practical-Labs/
+  * Projects/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01: Semantic HTML5, Forms, Tables & Accessibility (WCAG)
+  [ ] 02. Module 02: Modern CSS3, Flexbox, CSS Grid & Responsive Web Design
+  [ ] 03. Module 03: CSS Frameworks — Bootstrap 5 & Tailwind CSS
+  [ ] 04. Module 04: Interactive JavaScript ES6+, DOM Events & Browser Storage
+  [ ] 05. Module 05: Asynchronous JS, Fetch API, JSON & RESTful Services
+  [ ] 06. Module 06: Modern Frontend Frameworks (React.js) & Deployment
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

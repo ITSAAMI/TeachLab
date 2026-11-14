@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: REUSABLE CODE — UTILITIES
+Folder Path: TeachLab/Reusable-Code/Utilities
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Structured teaching, learning, and reference materials for Utilities inside TeachLab.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01 (Basic): Core foundations and terminology of Utilities
+  [ ] 02. Module 02 (Intermediate): Practical workflows, tools, and patterns in Utilities
+  [ ] 03. Module 03 (Advanced): Real-world implementation, optimization, and projects in Utilities
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

@@ -1,0 +1,35 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: UNIVERSITY SEMESTER COURSES
+Folder Path: TeachLab/University
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Academic semester courses with structured weekly lectures, lab manuals, graded assignments, and semester projects.
+
+INCLUDED SUBFOLDERS
+--------------------------------------------------------------------------------
+  * Advanced-Machine-Learning/
+  * Advanced-Neural-Networks/
+  * Database-Systems/
+  * Mobile-App-Development/
+  * Object-orianted-programming/
+  * Other-Courses/
+  * Programming/
+  * Web-Technology/
+  * programming-fundamintals/
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Web Technology (HTML5, CSS3, Bootstrap, Tailwind, JS, React & Backend Basics)
+  [ ] 02. Programming (Structured & Object-Oriented Programming)
+  [ ] 03. Database Systems (ER Modeling, SQL, Normalization & Transactions)
+  [ ] 04. Mobile App Development (Cross-Platform UI, State & APIs)
+  [ ] 05. Advanced Machine Learning & Advanced Neural Networks
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

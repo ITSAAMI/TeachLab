@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: AGENTS — EXPERIMENTS
+Folder Path: TeachLab/Artificial-Intelligence/Agents/Experiments
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Comprehensive AI curriculum covering search, classical ML, deep learning, NLP, computer vision, generative AI, LLMs, and autonomous agents.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Experiment 01: Baseline benchmark & parameter exploration
+  [ ] 02. Experiment 02: Comparative evaluation of techniques/architectures
+  [ ] 03. Experiment 03: Ablation study, edge cases & documented findings
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================

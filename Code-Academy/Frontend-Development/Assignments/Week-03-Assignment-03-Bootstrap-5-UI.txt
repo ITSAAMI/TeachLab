@@ -1,0 +1,43 @@
+================================================================================
+WEEK 03 - ASSIGNMENT 03: BOOTSTRAP 5 RAPID UI ENGINEERING
+Level: 3 - Intermediate
+Tech Stack: HTML5 + Bootstrap 5.3 (Grid, Components, Utilities, Icons)
+================================================================================
+
+PROJECT GOAL
+--------------------------------------------------------------------------------
+Build a 2-page responsive "Tech Storefront (index.html) & Admin Dashboard
+(dashboard.html)" using Bootstrap 5.3 Grid, interactive components, and utilities.
+
+STEP-BY-STEP TASKS CHECKLIST
+--------------------------------------------------------------------------------
+[Step 1] Setup, Navbar & Offcanvas Shopping Cart (index.html)
+  [ ] Include Bootstrap 5.3 CSS, JS Bundle, and Bootstrap Icons via CDN
+  [ ] Sticky .navbar-expand-lg with search .input-group and Cart button
+  [ ] Offcanvas right drawer (#cartDrawer) with .list-group items and total
+
+[Step 2] Hero Section & Nav Pills
+  [ ] Two-column hero using .row.align-items-center.g-5 and .col-lg-6
+  [ ] Category filter bar using Bootstrap .nav.nav-pills
+
+[Step 3] 12-Column Responsive Product Grid (8 Cards)
+  [ ] Use .row.row-cols-1.row-cols-sm-2.row-cols-lg-4.g-4
+  [ ] 8 equal-height cards (.card.h-100) with .badge status, price, and footer CTAs
+
+[Step 4] Quick-View Modal & Accordion FAQ
+  [ ] Bootstrap .modal.fade (#quickViewModal) triggered from product cards
+  [ ] 5-item .accordion FAQ section with collapsible answers
+
+[Step 5] Admin Dashboard & Validated Form (dashboard.html)
+  [ ] 4 KPI metric cards (.col-sm-6.col-xl-3) with .progress indicators
+  [ ] Recent Orders table inside .table-responsive (.table-hover.align-middle)
+  [ ] "Add New Product" form using .form-floating, .input-group & .needs-validation
+
+GRADING (100 PTS)
+--------------------------------------------------------------------------------
+- 12-Column Responsive Grid Mastery:            25 pts
+- Interactive Components (Modal/Offcanvas/FAQ): 30 pts
+- Admin Dashboard KPI Cards & Responsive Table: 20 pts
+- Form Floating Labels & Validation Feedback:   15 pts
+- Effective Use of Bootstrap Utility Classes:   10 pts
+================================================================================

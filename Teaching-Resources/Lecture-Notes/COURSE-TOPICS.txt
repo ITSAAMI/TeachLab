@@ -1,0 +1,21 @@
+================================================================================
+TEACHLAB COURSE & TOPIC GUIDE: TEACHING RESOURCES — LECTURE NOTES
+Folder Path: TeachLab/Teaching-Resources/Lecture-Notes
+================================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------------
+Structured teaching, learning, and reference materials for Lecture Notes inside TeachLab.
+
+STEP-BY-STEP TOPICS TO COVER IN COURSES
+--------------------------------------------------------------------------------
+  [ ] 01. Module 01 (Basic): Core foundations and terminology of Lecture Notes
+  [ ] 02. Module 02 (Intermediate): Practical workflows, tools, and patterns in Lecture Notes
+  [ ] 03. Module 03 (Advanced): Real-world implementation, optimization, and projects in Lecture Notes
+
+INSTRUCTOR PREPARATION CHECKLIST
+--------------------------------------------------------------------------------
+  [ ] Prepare lecture notes and live coding examples
+  [ ] Create student starter files and practical lab instructions
+  [ ] Add assignment rubric and reference solution
+================================================================================
