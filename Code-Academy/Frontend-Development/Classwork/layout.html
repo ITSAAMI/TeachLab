@@ -4,351 +4,584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZainDarkLabs designs and builds modern websites, product experiences, and custom software solutions.">
     <title>ZainDarkLabs | Software House</title>
+
+    <!-- Inter font (falls back to system fonts if it cannot load) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        /* Reset basic browser spacing so the layout starts from a clean slate */
-        * {
+        /* ============================================================
+           1. RESET – start every element from a clean slate
+           ============================================================ */
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Define reusable colors and shadows for a consistent brand look */
+        /* ============================================================
+           2. DESIGN TOKENS – reusable colors, radii and shadows
+           ============================================================ */
         :root {
             --primary: #28939C;
             --primary-dark: #1a6f74;
-            --dark: #101820;
+            --primary-light: #8de7ea;
+            --dark: #0d1820;
+            --dark-2: #13242e;
             --soft: #f4f8f9;
             --light: #ffffff;
             --text: #21313c;
-            --shadow: 0 12px 25px rgba(16, 24, 32, 0.12);
+            --muted: #4f616c;
+            --border: rgba(16, 24, 32, 0.08);
+
+            --radius-sm: 12px;
+            --radius-md: 18px;
+            --radius-lg: 32px;
+
+            --shadow-sm: 0 4px 12px rgba(16, 24, 32, 0.06);
+            --shadow: 0 12px 30px rgba(16, 24, 32, 0.10);
+            --shadow-lg: 0 30px 60px rgba(16, 24, 32, 0.22);
+
+            --header-h: 76px;
         }
 
-        /* Page background and typography */
+        /* ============================================================
+           3. BASE – page background, typography and focus styles
+           ============================================================ */
+        html {
+            scroll-padding-block-start: var(--header-h);
+        }
+
         body {
-            min-height: 100vh;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(180deg, #edf7f8 0%, #f9fbfb 100%);
+            min-block-size: 100vh;
+            min-block-size: 100dvh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--soft);
             color: var(--text);
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Main wrapper keeps the whole site centered and refined */
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            min-height: 100vh;
-            box-shadow: var(--shadow);
-            background: var(--light);
+        /* Main grows so the footer always sits at the bottom */
+        main {
+            flex: 1;
         }
 
-        /* Top branding header */
-        header {
+        /* Centered content column used by every section */
+        .wrapper {
+            inline-size: min(1200px, 100% - 3rem);
+            margin-inline: auto;
+        }
+
+        /* Clear keyboard focus ring for every interactive element */
+        a:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 3px;
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+           4. HEADER – sticky bar with logo, navigation and CTA
+           ============================================================ */
+        .site-header {
+            position: sticky;
+            inset-block-start: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.94);
+            border-block-end: 1px solid var(--border);
+        }
+
+        /* Frosted-glass effect only where the browser supports it */
+        @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+            .site-header {
+                background: rgba(255, 255, 255, 0.72);
+                -webkit-backdrop-filter: saturate(180%) blur(14px);
+                backdrop-filter: saturate(180%) blur(14px);
+            }
+        }
+
+        .header-inner {
             display: flex;
-            justify-content: center;
             align-items: center;
-            min-height: 94px;
+            gap: 1.5rem;
+            min-block-size: var(--header-h);
+        }
+
+        /* Brand logo */
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+
+        .logo-mark {
+            display: grid;
+            place-items: center;
+            inline-size: 40px;
+            block-size: 40px;
+            border-radius: var(--radius-sm);
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: var(--light);
-            letter-spacing: 0.08em;
-            text-align: center;
-            padding: 1.2rem 1.5rem;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 18px rgba(40, 147, 156, 0.35);
         }
 
-        header h1 {
-            font-size: clamp(1.8rem, 2.4vw, 3rem);
-            text-transform: uppercase;
-            font-weight: 800;
-            margin: 0;
+        .logo .accent {
+            color: var(--primary);
         }
 
-        /* Navigation bar styling */
-        nav {
-            background: rgba(244, 248, 249, 0.9);
-            border-bottom: 1px solid rgba(16, 24, 32, 0.08);
-            backdrop-filter: blur(4px);
+        /* Navigation links */
+        .site-nav {
+            margin-inline-start: auto;
         }
 
-        ul {
+        .nav-links {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            gap: 1.2rem;
-            padding: 1rem 1.5rem;
             flex-wrap: wrap;
-            margin: 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--dark);
-            padding: 0.7rem 1.15rem;
-            border-radius: 999px;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        ul li a:hover {
-            background: var(--primary);
-            color: var(--light);
-            transform: translateY(-1px);
-        }
-
-        /* Two-column hero section */
-        .row {
-            display: flex;
-            min-height: 72vh;
-        }
-
-        /* Sidebar visual treatment */
-        .row aside {
-            flex: 0 0 32%;
-            background: linear-gradient(180deg, #0c1d26 0%, #101820 100%);
-            position: relative;
-            overflow: hidden;
-            display: flex;
+            flex-wrap: balance;
             align-items: center;
-            justify-content: center;
-            padding: 2rem;
+            gap: 0.25rem;
+            list-style: none;
         }
 
-        .row aside::before,
-        .row aside::after {
+        .nav-links a {
+            position: relative;
+            display: inline-block;
+            padding: 0.55rem 1rem;
+            border-radius: 999px;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--dark);
+            background: rgba(40, 147, 156, 0.08);
+        }
+
+        /* Current page: tinted pill + underline bar (not color alone) */
+        .nav-links a[aria-current="page"] {
+            color: var(--primary-dark);
+            background: rgba(40, 147, 156, 0.12);
+        }
+
+        .nav-links a[aria-current="page"]::after {
             content: "";
             position: absolute;
-            width: 230px;
-            height: 230px;
+            inset-inline: 1rem;
+            inset-block-end: 0.3rem;
+            block-size: 2px;
+            border-radius: 2px;
+            background: var(--primary-dark);
+        }
+
+        /* ============================================================
+           5. BUTTONS
+           ============================================================ */
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.95rem 1.6rem;
+            border: 1px solid transparent;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: transform 0.2s ease, box-shadow 0.2s ease,
+                background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn .arrow {
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            box-shadow: 0 12px 24px rgba(40, 147, 156, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 30px rgba(40, 147, 156, 0.32);
+        }
+
+        .btn-secondary {
+            background: var(--light);
+            color: var(--dark);
+            border-color: var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .btn-sm {
+            padding: 0.6rem 1.1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================================
+           6. HERO – two-column grid: content + dark visual card
+           ============================================================ */
+        .hero {
+            position: relative;
+            isolation: isolate;
+            padding-block: clamp(3rem, 8vw, 6.5rem);
+            background:
+                radial-gradient(circle at 8% 12%, rgba(40, 147, 156, 0.16), transparent 40%),
+                radial-gradient(circle at 92% 85%, rgba(40, 147, 156, 0.12), transparent 45%),
+                linear-gradient(180deg, #f2fbfc 0%, #f7fafb 100%);
+        }
+
+        /* Subtle dotted pattern that fades out towards the bottom */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background-image: radial-gradient(rgba(16, 24, 32, 0.08) 1px, transparent 1px);
+            background-size: 22px 22px;
+            -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 75%);
+            mask-image: linear-gradient(to bottom, #000 0%, transparent 75%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+            align-items: center;
+            gap: clamp(2.5rem, 5vw, 4.5rem);
+        }
+
+        /* --- Left column: headline, copy, buttons, stats --- */
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            background: rgba(40, 147, 156, 0.12);
+            color: var(--primary-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-block-end: 1.4rem;
+        }
+
+        .tag::before {
+            content: "";
+            inline-size: 8px;
+            block-size: 8px;
             border-radius: 50%;
-            background: rgba(40, 147, 156, 0.14);
-            border: 2px solid rgba(255, 255, 255, 0.14);
+            background: var(--primary);
+            box-shadow: 0 0 0 4px rgba(40, 147, 156, 0.2);
         }
 
-        .row aside::before {
-            top: 8%;
-            left: 12%;
+        .hero-content h1 {
+            font-size: clamp(2.3rem, 4vw + 0.8rem, 4rem);
+            line-height: 1.08;
+            letter-spacing: -0.035em;
+            font-weight: 800;
+            color: var(--dark);
+            margin-block-end: 1.3rem;
+            text-wrap: balance;
         }
 
-        .row aside::after {
-            bottom: 10%;
-            right: 12%;
+        .hero-content h1 .highlight {
+            color: var(--primary-dark);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lead {
+            max-inline-size: 56ch;
+            font-size: clamp(1.05rem, 0.4vw + 1rem, 1.2rem);
+            line-height: 1.75;
+            color: var(--muted);
+            margin-block-end: 2.2rem;
+            text-wrap: pretty;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            margin-block-end: 3rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.5rem;
+            max-inline-size: 560px;
+            padding-block-start: 2rem;
+            border-block-start: 1px solid var(--border);
+        }
+
+        .stat strong {
+            display: block;
+            font-size: clamp(1.6rem, 1.5vw + 1rem, 2.2rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            font-weight: 800;
+            color: var(--dark);
+            margin-block-end: 0.35rem;
+        }
+
+        .stat span {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        /* --- Right column: dark visual panel --- */
+        .hero-visual {
+            position: relative;
+            isolation: isolate;
+            overflow: clip;
+            display: grid;
+            place-items: center;
+            min-block-size: 480px;
+            padding: clamp(1.5rem, 4vw, 3rem);
+            border-radius: var(--radius-lg);
+            background: linear-gradient(160deg, #0c1d26 0%, var(--dark) 100%);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Decorative rings behind the card */
+        .hero-visual::before,
+        .hero-visual::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inline-size: 260px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: rgba(40, 147, 156, 0.16);
+            border: 2px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .hero-visual::before {
+            inset-block-start: -60px;
+            inset-inline-start: -60px;
+        }
+
+        .hero-visual::after {
+            inset-block-end: -70px;
+            inset-inline-end: -50px;
         }
 
         .sidebar-card {
-            position: relative;
-            z-index: 1;
-            width: min(280px, 100%);
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            inline-size: min(320px, 100%);
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.14);
             border-radius: 24px;
-            padding: 1.5rem;
+            padding: 1.8rem;
             color: var(--light);
-            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+        }
+
+        @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+            .sidebar-card {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+            }
         }
 
         .sidebar-card .mini-label {
             display: inline-block;
             padding: 0.45rem 0.8rem;
             border-radius: 999px;
-            background: rgba(40, 147, 156, 0.18);
+            background: rgba(40, 147, 156, 0.22);
             color: #c7f4f5;
             font-size: 0.72rem;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            margin-bottom: 1rem;
+            margin-block-end: 1rem;
         }
 
-        .sidebar-card h3 {
-            font-size: 2rem;
-            line-height: 1.1;
-            margin-bottom: 0.8rem;
+        .sidebar-card h2 {
+            font-size: 1.9rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-block-end: 0.8rem;
+            text-wrap: balance;
         }
 
         .sidebar-card p {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 1.2rem;
+            color: rgba(255, 255, 255, 0.78);
+            margin-block-end: 1.4rem;
         }
 
         .sidebar-points {
             list-style: none;
-            padding: 0;
-            margin: 0;
             display: grid;
-            gap: 0.8rem;
+            gap: 0.85rem;
+            padding-block-start: 1.2rem;
+            border-block-start: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .sidebar-points li {
             display: flex;
             align-items: center;
-            gap: 0.7rem;
+            gap: 0.75rem;
             color: #dfeef0;
             font-size: 0.95rem;
+            font-weight: 500;
         }
 
         .sidebar-points li::before {
             content: "✓";
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 22px;
-            height: 22px;
+            flex-shrink: 0;
+            display: inline-grid;
+            place-items: center;
+            inline-size: 24px;
+            block-size: 24px;
             border-radius: 50%;
-            background: rgba(40, 147, 156, 0.2);
-            color: #8de7ea;
+            background: rgba(40, 147, 156, 0.25);
+            color: var(--primary-light);
+            font-size: 0.8rem;
             font-weight: 700;
         }
 
-        /* Main content area */
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #f2fbfc 0%, #edf3f6 100%);
-            padding: 3rem 2.5rem;
+        /* ============================================================
+           7. FOOTER
+           ============================================================ */
+        .site-footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding-block: 2.5rem;
         }
 
-        .content {
-            width: min(680px, 100%);
-            background: rgba(255, 255, 255, 0.78);
-            backdrop-filter: blur(2px);
-            padding: 2.7rem 2.2rem;
-            border-radius: 26px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(16, 24, 32, 0.04);
-        }
-
-        .tag {
-            display: inline-block;
-            background: rgba(40, 147, 156, 0.12);
-            color: var(--primary-dark);
-            padding: 0.52rem 1rem;
-            border-radius: 999px;
-            font-size: 0.76rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-
-        .content h2 {
-            font-size: clamp(2.2rem, 3vw, 3.5rem);
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            color: var(--dark);
-            font-weight: 800;
-        }
-
-        .content p {
-            font-size: 1.06rem;
-            line-height: 1.8;
-            color: #3d4d57;
-            margin-bottom: 1.6rem;
-        }
-
-        .button-group {
+        .footer-inner {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1.8rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            min-width: 170px;
-            padding: 0.9rem 1.5rem;
-            border-radius: 14px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.3s ease;
+            gap: 1.5rem;
         }
 
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        .site-footer .logo {
             color: var(--light);
-            box-shadow: 0 12px 24px rgba(40, 147, 156, 0.22);
         }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 18px 28px rgba(40, 147, 156, 0.25);
-        }
-
-        .btn-secondary {
-            background: #edf6f7;
-            color: var(--dark);
-            border: 1px solid rgba(16, 24, 32, 0.08);
-        }
-
-        .btn-secondary:hover {
-            background: #e4f1f3;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .stat {
-            background: #f6fafb;
-            border: 1px solid rgba(16, 24, 32, 0.04);
-            border-radius: 18px;
-            padding: 1rem;
-        }
-
-        .stat strong {
-            display: block;
-            font-size: 1.5rem;
-            color: var(--primary-dark);
-            margin-bottom: 0.3rem;
-        }
-
-        .stat span {
-            font-size: 0.85rem;
-            color: #576975;
-        }
-
-        /* Footer keeps branding and copyright information consistent */
-        footer {
-            min-height: 80px;
+        .footer-links {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--light);
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            text-align: center;
-            padding: 1rem;
+            flex-wrap: wrap;
+            gap: 0.4rem 1.5rem;
+            list-style: none;
         }
 
-        /* Responsive adjustments for smaller screens */
-        @media (max-width: 768px) {
-            .row {
-                flex-direction: column;
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.92rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+        }
+
+        .copyright {
+            inline-size: 100%;
+            padding-block-start: 1.5rem;
+            border-block-start: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.88rem;
+            text-align: center;
+        }
+
+        /* ============================================================
+           8. RESPONSIVE – tablets and phones
+           ============================================================ */
+        @media (max-width: 960px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
             }
 
-            .row aside {
-                min-height: 220px;
-                flex-basis: auto;
-            }
-
-            main {
-                padding: 1.5rem;
-            }
-
-            .content {
-                padding: 1.6rem 1.2rem;
+            .hero-visual {
+                min-block-size: 380px;
             }
 
             .stats {
-                grid-template-columns: 1fr;
+                max-inline-size: none;
+            }
+        }
+
+        @media (max-width: 760px) {
+
+            /* Logo on the first row, navigation on a second row.
+               The header CTA is hidden because the hero already shows it. */
+            .header-inner {
+                flex-direction: column;
+                gap: 0;
+                padding-block: 0.75rem;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .site-nav {
+                inline-size: 100%;
+                margin-inline-start: 0;
+                padding-block-start: 0.6rem;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .nav-links a {
+                padding: 0.45rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.05rem;
+            }
+
+            .logo-mark {
+                inline-size: 34px;
+                block-size: 34px;
             }
 
             .button-group {
@@ -356,58 +589,96 @@
             }
 
             .btn {
-                width: 100%;
+                inline-size: 100%;
+            }
+
+            .stats {
+                gap: 0.75rem;
+            }
+
+            .stat span {
+                font-size: 0.8rem;
+            }
+
+            .hero-visual {
+                min-block-size: auto;
             }
         }
 
+        /* ============================================================
+           9. ACCESSIBILITY PREFERENCES
+           ============================================================ */
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+
+            .btn:hover,
+            .btn:hover .arrow {
+                transform: none;
+            }
+        }
+
+        /* Keep the current-page indicator visible in Windows High Contrast */
+        @media (forced-colors: active) {
+            .nav-links a[aria-current="page"] {
+                border: 2px solid CanvasText;
+            }
+
+            .nav-links a[aria-current="page"]::after {
+                background: CanvasText;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Main page wrapper holds the full website layout -->
-    <div class="container">
-        <!-- Top branding header -->
-        <header>
-            <h1>ZainDarkLabs.com</h1>
-        </header>
+    <!-- Sticky header: logo, primary navigation and call-to-action -->
+    <header class="site-header">
+        <div class="wrapper header-inner">
+            <a class="logo" href="#" aria-label="ZainDarkLabs home">
+                <span class="logo-mark" aria-hidden="true">Z</span>
+                <span>ZainDark<span class="accent">Labs</span></span>
+            </a>
 
-        <!-- Primary navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Primary navigation menu -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
-        <!-- Main content row: left sidebar and right callout section -->
-        <div class="row">
-            <aside aria-label="Sidebar">
-                <div class="sidebar-card">
-                    <span class="mini-label">Digital Studio</span>
-                    <h3>Build smarter products.</h3>
-                    <p>Strategy, design, and development for brands that want premium digital experiences.</p>
-                    <ul class="sidebar-points">
-                        <li>UI/UX Design</li>
-                        <li>Web App Development</li>
-                        <li>Product Launch Support</li>
-                    </ul>
-                </div>
-            </aside>
-            <main>
-                <div class="content">
+            <a href="#" class="btn btn-primary btn-sm header-cta">Book a Call</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section: main message on the left, visual card on the right -->
+        <section class="hero">
+            <div class="wrapper hero-grid">
+                <div class="hero-content">
                     <span class="tag">Software House</span>
-                    <h2>We create digital systems that move businesses forward.</h2>
-                    <p>
+                    <h1>We create digital systems that <span class="highlight">move businesses forward.</span></h1>
+                    <p class="lead">
                         ZainDarkLabs designs and builds modern websites, product experiences, and custom software solutions
                         that help startups and companies scale with clarity, speed, and confidence.
                     </p>
 
                     <div class="button-group">
-                        <a href="#" class="btn btn-primary">Book a Call</a>
+                        <a href="#" class="btn btn-primary">Book a Call <span class="arrow" aria-hidden="true">→</span></a>
                         <a href="#" class="btn btn-secondary">View Projects</a>
                     </div>
 
@@ -426,14 +697,43 @@
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
 
-        <!-- Footer with company information -->
-        <footer>
-            <p>Copyright &copy; 2026 ZainDarkLabs.com</p>
-        </footer>
-    </div>
+                <!-- Dark visual panel with studio highlights -->
+                <aside class="hero-visual" aria-label="Studio highlights">
+                    <div class="sidebar-card">
+                        <span class="mini-label">Digital Studio</span>
+                        <h2>Build smarter products.</h2>
+                        <p>Strategy, design, and development for brands that want premium digital experiences.</p>
+                        <ul class="sidebar-points">
+                            <li>UI/UX Design</li>
+                            <li>Web App Development</li>
+                            <li>Product Launch Support</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with company information -->
+    <footer class="site-footer">
+        <div class="wrapper footer-inner">
+            <a class="logo" href="#" aria-label="ZainDarkLabs home">
+                <span class="logo-mark" aria-hidden="true">Z</span>
+                <span>ZainDark<span class="accent">Labs</span></span>
+            </a>
+
+            <ul class="footer-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="copyright">Copyright &copy; 2026 ZainDarkLabs.com</p>
+        </div>
+    </footer>
 </body>
 
 </html>
